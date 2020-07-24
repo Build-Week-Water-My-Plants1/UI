@@ -55,7 +55,7 @@ h3 {
 header {
   background-color: #F7FAFA;
   background-image: url(/images/flowers.svg);
-  height: 600px;
+  height: 700px;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -124,6 +124,7 @@ header .uvp #uvp-cta {
 }
 header .uvp #uvp-cta a button {
   margin: 0 auto;
+  font-family: "Francois One", sans-serif;
   font-size: 3.5rem;
   padding-left: 5rem;
   padding-right: 5rem;
