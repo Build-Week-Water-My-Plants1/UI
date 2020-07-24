@@ -1,0 +1,155 @@
+@import "variables.less";
+
+// General styles
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0 auto;
+    font-family: @font-body;
+    color: @body-text;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+button {
+    border-style: solid;
+    border-radius: 30px;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    transition: all 0.5s ease;
+}
+
+.outline {
+    color: @primary-color;
+    border-color: @primary-color;
+    background-color: @background-color1;
+}
+.filled {
+    margin-left: 2rem;
+    background-color: @primary-color;
+    border-color: @background-color1;
+    color: @background-color2;
+}
+
+a{
+    color: @primary-color;
+}
+
+a:link {
+    text-decoration: none;
+    color: @primary-color;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+h1 {
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 6rem;
+    text-align: center;
+  }
+
+h3 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+//End of General styles
+
+
+// Header
+header {
+    background-color: @background-color1;
+    background-image: url(/images/flowers.svg);
+    height: 600px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    //Top nav
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 5rem 5rem 0 5rem;
+        transition: all 0.5s ease;
+
+        .nav-items {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            transition: all 0.5s ease;
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                li {
+                    color: @primary-color;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    transition: all 0.5s ease;
+                    padding-left: 5rem;
+                }
+                li:first-of-type {
+                    padding-left: 0;
+                }
+                #nav-inactive {
+                    color: @body-text;
+                }
+                a:hover {
+                    color: @primary-color;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+             //CTA buttons
+            .cta {
+                display: flex;
+                justify-content: flex-end;
+                width: 50%;
+                // margin-left: 3rem;
+                a {
+                    text-decoration: none;
+                    button {
+                        width: 100%;
+                    }  
+                }
+            }
+        }
+        //Hamburger menu  
+        .mobile-menu {
+                display: none;
+        }
+    }
+    // UVP
+    .uvp {
+        width: 700px;
+        margin: 0 auto;
+        padding-top: 20rem;
+        #uvp-cta {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            a {
+                button {
+                    margin: 0 auto;
+                    font-size: 3.5rem;
+                    padding-left: 5rem;
+                    padding-right: 5rem;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}
