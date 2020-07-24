@@ -61,11 +61,10 @@ h1 {
   }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
   }
 //End of General styles
-
 
 // Header
 header {
@@ -154,6 +153,63 @@ header {
         }
     }
 }
+//Main content
+main {
+    //How to use the app section
+    #about-app {
+        margin: 0 auto;
+        padding-bottom: 15rem;
+        .app-img {
+            display: flex;
+            justify-content: center;
+            margin: 15rem 0;
+            img {
+                height: 400px;
+            }
+        }
+        #howto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .step {
+                width: 300px;
+                text-align: center;
+                .step-text {
+                    text-align: center;
+                    p {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+            .right-margin {
+                margin-right: 10rem;
+            }
+        }
+    }
+    //Testimonials
+    #testimonial {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 10rem 0;
+        padding: 10rem;
+        background-image: url(/images/water-background.svg);
+        .review {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            margin-bottom: 5rem;
+            padding: 5rem;
+            border-radius: 30px;
+            background-color: @background-color2;
+            img {
+                height: 200px;
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+//end of Main content
 
-//How to use app section
-
+//Footer

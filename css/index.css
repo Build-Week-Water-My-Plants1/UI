@@ -49,7 +49,7 @@ h1 {
   text-align: center;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 header {
@@ -129,5 +129,57 @@ header .uvp #uvp-cta a button {
   padding-left: 5rem;
   padding-right: 5rem;
   border-radius: 40px;
+}
+main #about-app {
+  margin: 0 auto;
+  padding-bottom: 15rem;
+}
+main #about-app .app-img {
+  display: flex;
+  justify-content: center;
+  margin: 15rem 0;
+}
+main #about-app .app-img img {
+  height: 400px;
+}
+main #about-app #howto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #about-app #howto .step {
+  width: 300px;
+  text-align: center;
+}
+main #about-app #howto .step .step-text {
+  text-align: center;
+}
+main #about-app #howto .step .step-text p {
+  margin-top: 2rem;
+}
+main #about-app #howto .right-margin {
+  margin-right: 10rem;
+}
+main #testimonial {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10rem 0;
+  padding: 10rem;
+  background-image: url(/images/water-background.svg);
+}
+main #testimonial .review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin-bottom: 5rem;
+  padding: 5rem;
+  border-radius: 30px;
+  background-color: #FCF7F3;
+}
+main #testimonial .review img {
+  height: 200px;
+  margin-right: 2rem;
 }
 /*# sourceMappingURL=./index.css.map */
