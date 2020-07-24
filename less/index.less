@@ -180,10 +180,11 @@ header {
                     }
                 }
                 .cta {
-                    width: 100%;
+                    width: 90%;
                     button {
                         padding: 1rem 2rem;
                         border-radius: 3rem;
+                        transition: all 0.5s ease;
                     }
                 }
             }
@@ -196,7 +197,7 @@ header {
 //Header - media query 700px
 @media (max-width: 700px) {
     header {
-        height: 500px;
+        height: 650px;
         transition: all 0.5s ease;
         nav {
             transition: all 0.5s ease;
@@ -214,6 +215,7 @@ header {
                     width: 100%;
                     button {
                         border-radius: 4rem;
+                        transition: all 0.5s ease;
                     }
                     .filled {
                         display: none;
@@ -223,7 +225,7 @@ header {
         }
         .uvp {
             width: 350px;
-            padding-top: 8rem;
+            padding-top: 15rem;
             h1 {
                 font-size: 3.2rem;
                 line-height: 5rem;
@@ -235,12 +237,14 @@ header {
                         padding-left: 3rem;
                         padding-right: 4rem;
                         border-radius: 30px;
+                        transition: all 0.5s ease;
                     }
                 }
             }
         }
     }
 }
+//End of media query
 
 //Main content
 main {
@@ -313,6 +317,73 @@ main {
     }
 }
 //end of Main content
+
+//Main content - media query 900px
+@media (max-width: 900px) {
+    main {
+        #about-app {
+            margin-top: 5rem;
+            .app-img {
+                margin: 10rem 0;
+                img {
+                    height: 300px;
+                }
+            }
+            #howto {
+                flex-direction: column;
+                .right-margin {
+                    margin-right: 0;
+                }
+                .step {
+                    margin-bottom: 7rem;
+                }
+            }
+        }
+        #testimonial {
+            margin-top: 5rem;
+        }
+        #second-cta {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+//Main content - media query 600px
+@media (max-width: 600px) {
+    main {
+        #about-app {
+            margin-top: 0;
+            padding-bottom: 2rem;
+            padding-top: 3rem;
+            .app-img {
+                img {
+                    height: 250px;
+                }
+            }
+        }
+        #testimonial {
+            padding: 3rem;
+            .review {
+                flex-direction: column;
+                border-radius: 3rem;
+                padding: 4rem;
+                p {
+                    margin-top: 2rem;
+                }
+            }
+        }
+        #second-cta {
+            width: 80%;
+            margin: 0 auto;
+            h1 {
+                padding: 0;
+                line-height: 4rem;
+            }
+        }
+    }
+}
+
 
 //Footer
 footer {

@@ -153,11 +153,12 @@ header .uvp #uvp-cta a button {
     padding-left: 2rem;
   }
   header nav .nav-items .cta {
-    width: 100%;
+    width: 90%;
   }
   header nav .nav-items .cta button {
     padding: 1rem 2rem;
     border-radius: 3rem;
+    transition: all 0.5s ease;
   }
   header .uvp {
     width: 500px;
@@ -165,7 +166,7 @@ header .uvp #uvp-cta a button {
 }
 @media (max-width: 700px) {
   header {
-    height: 500px;
+    height: 650px;
     transition: all 0.5s ease;
   }
   header nav {
@@ -183,13 +184,14 @@ header .uvp #uvp-cta a button {
   }
   header nav .nav-items .cta button {
     border-radius: 4rem;
+    transition: all 0.5s ease;
   }
   header nav .nav-items .cta .filled {
     display: none;
   }
   header .uvp {
     width: 350px;
-    padding-top: 8rem;
+    padding-top: 15rem;
   }
   header .uvp h1 {
     font-size: 3.2rem;
@@ -200,6 +202,7 @@ header .uvp #uvp-cta a button {
     padding-left: 3rem;
     padding-right: 4rem;
     border-radius: 30px;
+    transition: all 0.5s ease;
   }
 }
 main #about-app {
@@ -266,6 +269,61 @@ main #second-cta h1 {
   color: #00BDC8;
   font-family: "Francois One", sans-serif;
   padding: 0 2rem 0 2rem;
+}
+@media (max-width: 900px) {
+  main #about-app {
+    margin-top: 5rem;
+  }
+  main #about-app .app-img {
+    margin: 10rem 0;
+  }
+  main #about-app .app-img img {
+    height: 300px;
+  }
+  main #about-app #howto {
+    flex-direction: column;
+  }
+  main #about-app #howto .right-margin {
+    margin-right: 0;
+  }
+  main #about-app #howto .step {
+    margin-bottom: 7rem;
+  }
+  main #testimonial {
+    margin-top: 5rem;
+  }
+  main #second-cta h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  main #about-app {
+    margin-top: 0;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+  }
+  main #about-app .app-img img {
+    height: 250px;
+  }
+  main #testimonial {
+    padding: 3rem;
+  }
+  main #testimonial .review {
+    flex-direction: column;
+    border-radius: 3rem;
+    padding: 4rem;
+  }
+  main #testimonial .review p {
+    margin-top: 2rem;
+  }
+  main #second-cta {
+    width: 80%;
+    margin: 0 auto;
+  }
+  main #second-cta h1 {
+    padding: 0;
+    line-height: 4rem;
+  }
 }
 footer #social {
   margin-top: 5rem;
