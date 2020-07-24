@@ -14,7 +14,7 @@ body {
 button {
   border-style: solid;
   border-radius: 30px;
-  padding: 2rem 4rem;
+  padding: 1.5rem 2.5rem;
   font-size: 2rem;
   transition: all 0.5s ease;
 }
@@ -24,7 +24,7 @@ button {
   background-color: #F7FAFA;
 }
 .filled {
-  margin-left: 2rem;
+  margin-left: 1rem;
   background-color: #00BDC8;
   border-color: #F7FAFA;
   color: #FCF7F3;
@@ -71,7 +71,7 @@ header nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 5rem 5rem 0 5rem;
+  padding: 5rem 2.5rem 0 2.5rem;
   transition: all 0.5s ease;
 }
 header nav .nav-items {
@@ -92,7 +92,8 @@ header nav .nav-items ul li {
   font-weight: 500;
   letter-spacing: 0.5px;
   transition: all 0.5s ease;
-  padding-left: 5rem;
+  margin-right: 2rem;
+  padding-left: 1rem;
 }
 header nav .nav-items ul li:first-of-type {
   padding-left: 0;
@@ -107,8 +108,8 @@ header nav .nav-items ul a:hover {
 header nav .nav-items .cta {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
-  max-width: 300px;
+  width: 60%;
+  max-width: 225px;
 }
 header nav .nav-items .cta a {
   text-decoration: none;
@@ -133,6 +134,73 @@ header .uvp #uvp-cta a button {
   padding-left: 5rem;
   padding-right: 5rem;
   border-radius: 40px;
+}
+@media (max-width: 900px) {
+  header {
+    height: 700px;
+    transition: all 0.5s ease;
+  }
+  header nav {
+    padding: 5rem 1rem 0 1rem;
+    transition: all 0.5s ease;
+  }
+  header nav .logo img {
+    height: 35px;
+    transition: all 0.5s ease;
+  }
+  header nav .nav-items ul li {
+    margin-right: 0;
+    padding-left: 2rem;
+  }
+  header nav .nav-items .cta {
+    width: 100%;
+  }
+  header nav .nav-items .cta button {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+  }
+  header .uvp {
+    width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    height: 500px;
+    transition: all 0.5s ease;
+  }
+  header nav {
+    transition: all 0.5s ease;
+  }
+  header nav .logo img {
+    height: 30px;
+    transition: all 0.5s ease;
+  }
+  header nav .nav-items ul {
+    display: none;
+  }
+  header nav .nav-items .cta {
+    width: 100%;
+  }
+  header nav .nav-items .cta button {
+    border-radius: 4rem;
+  }
+  header nav .nav-items .cta .filled {
+    display: none;
+  }
+  header .uvp {
+    width: 350px;
+    padding-top: 8rem;
+  }
+  header .uvp h1 {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
+  header .uvp #uvp-cta a button {
+    font-size: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    border-radius: 30px;
+  }
 }
 main #about-app {
   margin: 0 auto;
@@ -168,7 +236,7 @@ main #testimonial {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 10rem 0;
+  margin: 10rem 0 5rem 0;
   padding: 5rem;
   background-image: url(/images/water-background.svg);
   background-size: contain;
@@ -179,7 +247,7 @@ main #testimonial .review {
   align-items: center;
   width: 600px;
   margin: 5rem 0;
-  border-radius: 30px;
+  border-radius: 70px;
   background-color: #FCF7F3;
 }
 main #testimonial .review img {
@@ -188,6 +256,16 @@ main #testimonial .review img {
 }
 main #testimonial .review p {
   margin-right: 2rem;
+}
+main #second-cta {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+main #second-cta h1 {
+  color: #00BDC8;
+  font-family: "Francois One", sans-serif;
+  padding: 0 2rem 0 2rem;
 }
 footer #social {
   margin-top: 5rem;
