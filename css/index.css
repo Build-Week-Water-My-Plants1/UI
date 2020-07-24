@@ -111,7 +111,7 @@ header nav .nav-items .cta {
   display: flex;
   justify-content: flex-end;
   width: 60%;
-  max-width: 225px;
+  max-width: 275px;
 }
 header nav .nav-items .cta a {
   text-decoration: none;
