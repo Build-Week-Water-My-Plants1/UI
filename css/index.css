@@ -3,10 +3,10 @@
 }
 html {
   font-size: 62.5%;
+  font-family: "Inter", sans-serif;
 }
 body {
   margin: 0 auto;
-  font-family: "Inter", sans-serif;
   color: #2E3B40;
   font-size: 2rem;
   line-height: 3rem;
@@ -18,6 +18,7 @@ button {
   font-size: 2rem;
   cursor: pointer;
   transition: all 0.5s ease;
+  font-family: "Inter", sans-serif;
 }
 .outline {
   color: #00BDC8;
