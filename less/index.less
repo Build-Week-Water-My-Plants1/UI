@@ -60,6 +60,12 @@ h1 {
     text-align: center;
   }
 
+h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
 h3 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -70,7 +76,7 @@ h3 {
 header {
     background-color: @background-color1;
     background-image: url(/images/flowers.svg);
-    height: 700px;
+    height: 800px;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -158,7 +164,7 @@ main {
     //How to use the app section
     #about-app {
         margin: 0 auto;
-        padding-bottom: 15rem;
+        padding: 10rem 0;
         .app-img {
             display: flex;
             justify-content: center;
@@ -192,19 +198,22 @@ main {
         justify-content: space-around;
         flex-wrap: wrap;
         margin: 10rem 0;
-        padding: 10rem;
+        padding: 5rem;
         background-image: url(/images/water-background.svg);
+        background-size: contain;
         .review {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 600px;
-            margin-bottom: 5rem;
-            padding: 5rem;
+            margin: 5rem 0;
             border-radius: 30px;
             background-color: @background-color2;
             img {
-                height: 200px;
+                height: 150px;
+                margin-right: 2rem;
+            }
+            p {
                 margin-right: 2rem;
             }
         }
@@ -213,3 +222,24 @@ main {
 //end of Main content
 
 //Footer
+footer {
+    #social {
+        margin-top: 5rem;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+        background-color: @background-color1;
+        .icon-container {
+            width: 100%;
+            text-align: center;
+            padding: 5rem 0;
+            a:first-child {
+                margin-right: 3rem;
+            }
+        }
+    }
+    .copyright {
+        color: @background-color2;
+        background-color: @secondary-color;
+        padding: 2rem;
+    }
+}
