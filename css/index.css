@@ -41,6 +41,7 @@ ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  flex-grow: 1;
 }
 h1 {
   font-size: 4.2rem;
@@ -107,12 +108,10 @@ header nav .nav-items .cta {
   display: flex;
   justify-content: flex-end;
   width: 50%;
+  max-width: 300px;
 }
 header nav .nav-items .cta a {
   text-decoration: none;
-}
-header nav .nav-items .cta a button {
-  width: 100%;
 }
 header nav .mobile-menu {
   display: none;

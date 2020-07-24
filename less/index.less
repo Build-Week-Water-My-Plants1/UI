@@ -51,6 +51,7 @@ ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    flex-grow: 1;
 }
 
 h1 {
@@ -123,12 +124,9 @@ header {
                 display: flex;
                 justify-content: flex-end;
                 width: 50%;
-                // margin-left: 3rem;
+                max-width: 300px;
                 a {
-                    text-decoration: none;
-                    button {
-                        width: 100%;
-                    }  
+                    text-decoration: none; 
                 }
             }
         }
@@ -159,6 +157,12 @@ header {
         }
     }
 }
+
+//Header - media query
+@media (max-width: 500px) {
+     
+}
+
 //Main content
 main {
     //How to use the app section
