@@ -290,6 +290,7 @@ main {
         padding: 5rem;
         background-image: url(/images/water-background.svg);
         background-size: contain;
+        border-top: 1px solid @text-hint;
         .review {
             display: flex;
             justify-content: center;
@@ -310,7 +311,11 @@ main {
     #second-cta {
         display: flex;
         justify-content: center;
-        padding-bottom: 5rem;
+        padding-bottom: 8rem;
+        border-bottom: 1px solid @text-hint;
+        img {
+            height: 5rem;
+        }
         h1 {
             color: @primary-color;
             font-family: @font-special;
@@ -390,7 +395,6 @@ main {
 //Footer
 footer {
     #social {
-        margin-top: 5rem;
         padding-top: 10rem;
         padding-bottom: 5rem;
         background-color: @background-color1;
@@ -404,7 +408,8 @@ footer {
         }
     }
     .copyright {
-        color: @background-color2;
+        color: @line-color;
+        font-size: 1.5rem;
         background-color: @secondary-color;
         padding: 2rem;
     }

@@ -245,6 +245,7 @@ main #testimonial {
   padding: 5rem;
   background-image: url(/images/water-background.svg);
   background-size: contain;
+  border-top: 1px solid #B5BDBF;
 }
 main #testimonial .review {
   display: flex;
@@ -265,7 +266,11 @@ main #testimonial .review p {
 main #second-cta {
   display: flex;
   justify-content: center;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
+  border-bottom: 1px solid #B5BDBF;
+}
+main #second-cta img {
+  height: 5rem;
 }
 main #second-cta h1 {
   color: #00BDC8;
@@ -328,7 +333,6 @@ main #second-cta h1 {
   }
 }
 footer #social {
-  margin-top: 5rem;
   padding-top: 10rem;
   padding-bottom: 5rem;
   background-color: #F7FAFA;
@@ -342,7 +346,8 @@ footer #social .icon-container a:first-child {
   margin-right: 3rem;
 }
 footer .copyright {
-  color: #FCF7F3;
+  color: #D6EBEC;
+  font-size: 1.5rem;
   background-color: #0999A2;
   padding: 2rem;
 }
