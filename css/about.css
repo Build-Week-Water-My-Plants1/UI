@@ -100,7 +100,7 @@ header nav .nav-items ul li {
 header nav .nav-items ul li:first-of-type {
   padding-left: 0;
 }
-header nav .nav-items ul #nav-inactive {
+header nav .nav-items ul .nav-inactive {
   color: #2B3438;
 }
 header nav .nav-items ul a:hover {
@@ -237,7 +237,7 @@ main #about-app #howto .step .step-text p {
 main #about-app #howto .right-margin {
   margin-right: 10rem;
 }
-main #testimonial {
+main .pill-cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -247,7 +247,7 @@ main #testimonial {
   background-size: contain;
   border-top: 1px solid #B5BDBF;
 }
-main #testimonial .review {
+main .pill-cards .pill {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,11 +256,11 @@ main #testimonial .review {
   border-radius: 70px;
   background-color: #FCF7F3;
 }
-main #testimonial .review img {
+main .pill-cards .pill img {
   height: 150px;
   margin-right: 2rem;
 }
-main #testimonial .review p {
+main .pill-cards .pill p {
   margin-right: 2rem;
 }
 main #second-cta {
@@ -296,7 +296,7 @@ main #second-cta h1 {
   main #about-app #howto .step {
     margin-bottom: 7rem;
   }
-  main #testimonial {
+  main .pill-cards {
     margin-top: 5rem;
   }
   main #second-cta h1 {
@@ -312,15 +312,15 @@ main #second-cta h1 {
   main #about-app .app-img img {
     height: 250px;
   }
-  main #testimonial {
+  main .pill-cards {
     padding: 3rem;
   }
-  main #testimonial .review {
+  main .pill-cards .pill {
     flex-direction: column;
     border-radius: 3rem;
     padding: 4rem;
   }
-  main #testimonial .review p {
+  main .pill-cards .pill p {
     margin-top: 2rem;
   }
   main #second-cta {
@@ -353,5 +353,19 @@ footer .copyright {
 }
 header {
   background-image: url();
+  padding: 0;
+  height: 140px;
+}
+main h1 {
+  font-family: "Francois One", sans-serif;
+  padding-top: 5rem;
+}
+main .pill-cards {
+  border-top: none;
+  margin-top: 0;
+}
+main .pill-cards .pill {
+  justify-content: flex-start;
+  width: 400px;
 }
 /*# sourceMappingURL=./about.css.map */
