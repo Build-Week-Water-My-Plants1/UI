@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+body {
+  margin: 0 auto;
+  color: #2B3438;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+button {
+  border-style: solid;
+  border-radius: 30px;
+  padding: 1.5rem 2.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: "Inter", sans-serif;
+}
+.outline {
+  color: #00BDC8;
+  border-color: #00BDC8;
+  background-color: #F7FAFA;
+}
+.filled {
+  margin-left: 1rem;
+  background-color: #00BDC8;
+  border-color: #F7FAFA;
+  color: #FCF7F3;
+}
+a {
+  color: #00BDC8;
+}
+a:link {
+  text-decoration: none;
+  color: #00BDC8;
+}
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-grow: 1;
+}
+h1 {
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 6rem;
+  text-align: center;
+}
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+header {
+  background-color: #F7FAFA;
+  background-image: url(/images/flowers.svg);
+  height: 800px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5rem 2.5rem 0 2.5rem;
+  transition: all 0.5s ease;
+}
+header nav .nav-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+header nav .nav-items ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header nav .nav-items ul li {
+  color: #00BDC8;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.5s ease;
+  margin-right: 2rem;
+  padding-left: 1rem;
+}
+header nav .nav-items ul li:first-of-type {
+  padding-left: 0;
+}
+header nav .nav-items ul #nav-inactive {
+  color: #2B3438;
+}
+header nav .nav-items ul a:hover {
+  color: #00BDC8;
+  transition: all 0.2s ease-in-out;
+}
+header nav .nav-items .cta {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  max-width: 275px;
+}
+header nav .nav-items .cta a {
+  text-decoration: none;
+}
+header nav .mobile-menu {
+  display: none;
+}
+header .uvp {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 20rem;
+}
+header .uvp #uvp-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+header .uvp #uvp-cta a button {
+  margin: 0 auto;
+  font-family: "Francois One", sans-serif;
+  font-size: 3.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-radius: 40px;
+}
+@media (max-width: 900px) {
+  header {
+    height: 700px;
+    transition: all 0.5s ease;
+  }
+  header nav {
+    padding: 5rem 1rem 0 1rem;
+    transition: all 0.5s ease;
+  }
+  header nav .logo img {
+    height: 35px;
+    transition: all 0.5s ease;
+  }
+  header nav .nav-items ul li {
+    margin-right: 0;
+    padding-left: 2rem;
+  }
+  header nav .nav-items .cta {
+    width: 90%;
+  }
+  header nav .nav-items .cta button {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    transition: all 0.5s ease;
+  }
+  header .uvp {
+    width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    height: 650px;
+    transition: all 0.5s ease;
+  }
+  header nav {
+    transition: all 0.5s ease;
+  }
+  header nav .logo img {
+    height: 30px;
+    transition: all 0.5s ease;
+  }
+  header nav .nav-items ul {
+    display: none;
+  }
+  header nav .nav-items .cta {
+    width: 100%;
+  }
+  header nav .nav-items .cta button {
+    border-radius: 4rem;
+    transition: all 0.5s ease;
+  }
+  header nav .nav-items .cta .filled {
+    display: none;
+  }
+  header .uvp {
+    width: 350px;
+    padding-top: 15rem;
+  }
+  header .uvp h1 {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
+  header .uvp #uvp-cta a button {
+    font-size: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+  }
+}
+main #about-app {
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+main #about-app .app-img {
+  display: flex;
+  justify-content: center;
+  margin: 15rem 0;
+}
+main #about-app .app-img img {
+  height: 400px;
+}
+main #about-app #howto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #about-app #howto .step {
+  width: 300px;
+  text-align: center;
+}
+main #about-app #howto .step .step-text {
+  text-align: center;
+}
+main #about-app #howto .step .step-text p {
+  margin-top: 2rem;
+}
+main #about-app #howto .right-margin {
+  margin-right: 10rem;
+}
+main #testimonial {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10rem 0 5rem 0;
+  padding: 5rem;
+  background-image: url(/images/water-background.svg);
+  background-size: contain;
+  border-top: 1px solid #B5BDBF;
+}
+main #testimonial .review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: 5rem 0;
+  border-radius: 70px;
+  background-color: #FCF7F3;
+}
+main #testimonial .review img {
+  height: 150px;
+  margin-right: 2rem;
+}
+main #testimonial .review p {
+  margin-right: 2rem;
+}
+main #second-cta {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8rem;
+  border-bottom: 1px solid #B5BDBF;
+}
+main #second-cta img {
+  height: 5rem;
+}
+main #second-cta h1 {
+  color: #00BDC8;
+  font-family: "Francois One", sans-serif;
+  padding: 0 2rem 0 2rem;
+}
+@media (max-width: 900px) {
+  main #about-app {
+    margin-top: 5rem;
+  }
+  main #about-app .app-img {
+    margin: 10rem 0;
+  }
+  main #about-app .app-img img {
+    height: 300px;
+  }
+  main #about-app #howto {
+    flex-direction: column;
+  }
+  main #about-app #howto .right-margin {
+    margin-right: 0;
+  }
+  main #about-app #howto .step {
+    margin-bottom: 7rem;
+  }
+  main #testimonial {
+    margin-top: 5rem;
+  }
+  main #second-cta h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  main #about-app {
+    margin-top: 0;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+  }
+  main #about-app .app-img img {
+    height: 250px;
+  }
+  main #testimonial {
+    padding: 3rem;
+  }
+  main #testimonial .review {
+    flex-direction: column;
+    border-radius: 3rem;
+    padding: 4rem;
+  }
+  main #testimonial .review p {
+    margin-top: 2rem;
+  }
+  main #second-cta {
+    width: 80%;
+    margin: 0 auto;
+  }
+  main #second-cta h1 {
+    padding: 0;
+    line-height: 4rem;
+  }
+}
+footer #social {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-color: #F7FAFA;
+}
+footer #social .icon-container {
+  width: 100%;
+  text-align: center;
+  padding: 5rem 0;
+}
+footer #social .icon-container a:first-child {
+  margin-right: 3rem;
+}
+footer .copyright {
+  color: #D6EBEC;
+  font-size: 1.5rem;
+  background-color: #0999A2;
+  padding: 2rem;
+}
+header {
+  background-image: url();
+}
+/*# sourceMappingURL=./about.css.map */
