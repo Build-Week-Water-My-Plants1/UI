@@ -182,6 +182,9 @@ header .uvp #uvp-cta a button {
     display: block;
     transition: all 0.5s ease;
   }
+  header nav .nav-container {
+    align-items: center;
+  }
   header nav .logo img {
     height: 30px;
     transition: all 0.5s ease;
