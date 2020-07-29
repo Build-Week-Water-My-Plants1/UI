@@ -147,6 +147,10 @@ header .uvp #uvp-cta a button {
 @media (max-width: 900px) {
   header {
     height: 700px;
+    background-image: url(/images/flowers-tablet.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
     transition: all 0.5s ease;
   }
   header nav {
@@ -176,6 +180,10 @@ header .uvp #uvp-cta a button {
 @media (max-width: 700px) {
   header {
     height: 650px;
+    background-image: url(/images/flowers-mobile.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
     transition: all 0.5s ease;
   }
   header nav {
