@@ -76,6 +76,10 @@ header nav {
   padding: 5rem 2.5rem 0 2.5rem;
   transition: all 0.5s ease;
 }
+header nav .nav-container {
+  display: flex;
+  width: 100%;
+}
 header nav .nav-items {
   display: flex;
   justify-content: flex-end;
@@ -119,10 +123,8 @@ header nav .nav-items .cta a {
 header nav .mobile-menu {
   display: none;
 }
-header nav .menu {
-  position: fixed;
-  top: 0;
-  z-index: 1;
+header #mobile {
+  display: none;
 }
 header .uvp {
   width: 700px;
@@ -177,6 +179,7 @@ header .uvp #uvp-cta a button {
     transition: all 0.5s ease;
   }
   header nav {
+    display: block;
     transition: all 0.5s ease;
   }
   header nav .logo img {
@@ -195,6 +198,24 @@ header .uvp #uvp-cta a button {
   }
   header nav .nav-items .cta .filled {
     display: none;
+  }
+  header nav .mobile-menu {
+    display: block;
+  }
+  header nav .mobile-menu button {
+    border: none;
+    background-color: inherit;
+    outline: none;
+  }
+  header nav .mobile-menu button i {
+    color: #00BDC8;
+  }
+  header nav #mobile {
+    display: block;
+    width: 100%;
+    background-color: #F7FAFA;
+    padding: 2rem;
+    text-align: center;
   }
   header .uvp {
     width: 350px;

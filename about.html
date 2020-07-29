@@ -14,6 +14,7 @@
     <header>
         <!-- Top nav -->
         <nav>
+            <div class="nav-container">
             <div class=logo>
                 <img src="images/logo.svg" alt="Water My Plants logo" srcset="">
             </div>
@@ -26,11 +27,17 @@
                     <a href="https://water-my-plants-1.vercel.app/"><button class="outline">Sign in</button></a>
                     <a href="https://water-my-plants-1.vercel.app/"><button class="filled">Sign up</button></a>
                 </div>
+                <div class="mobile-menu">
+                    <button onclick="mobileMenu()"></a><i class="fas fa-bars"></i></button>
+                </div>
             </div>
+        </div>
             <!-- Mobile hamburger menu -->
-            <div class="mobile-menu">
-                <a class="icon" href=" " target="_blank"><i class="fas fa-bars"></i></a>
-            </div>
+           
+            <ul id="mobile" style="display: none;">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-inactive">About</li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -102,11 +109,11 @@
             <p>Copyright © 2020 – All rights reserved</p>
         </div>
     </footer>
-    <div class="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="nav-inactive">About</li>
-        </ul>
-    </div>
+    <script>
+        function mobileMenu() {
+            var x = document.getElementById("mobile");
+            x.style.display === "block" ? x.style.display = "none" : x.style.display = "block"
+        }
+    </script>
 </body>
 </html>

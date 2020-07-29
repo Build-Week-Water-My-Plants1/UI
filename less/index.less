@@ -91,7 +91,10 @@ header {
         width: 100%;
         padding: 5rem 2.5rem 0 2.5rem;
         transition: all 0.5s ease;
-
+        .nav-container {
+            display: flex;
+            width: 100%;
+        }
         .nav-items {
             display: flex;
             justify-content: flex-end;
@@ -137,12 +140,10 @@ header {
         .mobile-menu {
                 display: none;
         }
-        .menu {
-            position: fixed;
-            top: 0;
-            z-index: 1;
-        }
     }
+        #mobile {
+            display: none;
+        }
     // UVP
     .uvp {
         width: 700px;
@@ -207,7 +208,9 @@ header {
         height: 650px;
         transition: all 0.5s ease;
         nav {
+            display: block;
             transition: all 0.5s ease;
+
             .logo {
                 img {
                     height: 30px;
@@ -228,6 +231,24 @@ header {
                         display: none;
                     }
                 }
+            }
+            .mobile-menu {
+                display: block;
+                button {
+                    border: none;
+                    background-color: inherit;
+                    outline: none;
+                    i {
+                        color: @primary-color;
+                    }
+                }
+            }
+            #mobile {
+                display: block;
+                width: 100%;
+                background-color: @background-color1;
+                padding: 2rem;
+                text-align: center;
             }
         }
         .uvp {
