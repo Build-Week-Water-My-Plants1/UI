@@ -147,6 +147,10 @@ header .uvp #uvp-cta a button {
 @media (max-width: 900px) {
   header {
     height: 700px;
+    background-image: url(/images/flowers-tablet.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
     transition: all 0.5s ease;
   }
   header nav {
@@ -176,6 +180,10 @@ header .uvp #uvp-cta a button {
 @media (max-width: 700px) {
   header {
     height: 650px;
+    background-image: url(/images/flowers-mobile.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
     transition: all 0.5s ease;
   }
   header nav {
@@ -239,6 +247,11 @@ header .uvp #uvp-cta a button {
     padding-right: 4rem;
     border-radius: 30px;
     transition: all 0.5s ease;
+  }
+}
+@media (max-width: 500px) {
+  header .uvp {
+    padding-top: 10rem;
   }
 }
 main #about-app {
@@ -390,6 +403,9 @@ header {
   padding: 0;
   height: 120px;
 }
+main {
+  padding-bottom: 0;
+}
 main h1 {
   font-family: "Francois One", sans-serif;
   padding-top: 5rem;
@@ -398,8 +414,11 @@ main .pill-cards {
   border-top: none;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 0;
-  background-image: url("");
+  padding-bottom: 30rem;
+  background-image: url("/images/team.svg");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 main .pill-cards .pill {
   justify-content: flex-start;
@@ -409,10 +428,25 @@ main .pill-cards .pill .pill-text h4 {
   font-size: 2.5rem;
   font-weight: 600;
 }
-main .team-img {
-  height: 500px;
-  background-image: url("/images/team.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+main .pill:last-child {
+  margin-bottom: 25rem;
+}
+@media (max-width: 900px) {
+  main .pill-cards {
+    background-image: url("/images/team-tablet.svg");
+    transition: all 0.5s ease;
+  }
+  main .pill-cards .pill:last-child {
+    margin-bottom: 15rem;
+  }
+}
+@media (max-width: 600px) {
+  main .pill-cards {
+    background-image: url("/images/team-mobile.svg");
+    transition: all 0.5s ease;
+  }
+  main .pill-cards .pill:last-child {
+    margin-bottom: 5rem;
+  }
 }
 /*# sourceMappingURL=./about.css.map */

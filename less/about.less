@@ -6,7 +6,8 @@ header {
     height: 120px;
 }
 
-main {  
+main {
+    padding-bottom: 0;  
     h1 {
         font-family: @font-special;
         padding-top: 5rem;
@@ -15,8 +16,11 @@ main {
         border-top: none;
         margin-top: 0;
         margin-bottom: 0;
-        padding-bottom: 0;
-        background-image: url("");
+        padding-bottom: 30rem;
+        background-image: url("/images/team.svg");
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
         .pill {
             justify-content: flex-start;
             width: 400px;
@@ -28,10 +32,32 @@ main {
             }
         }
     }
-    .team-img {
-        height: 500px;
-        background-image: url("/images/team.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
+    .pill:last-child {
+        margin-bottom: 25rem;
+    }
+}
+
+// Main media query
+@media (max-width: 900px) {
+    main {
+        .pill-cards {
+            background-image: url("/images/team-tablet.svg");
+            transition: all 0.5s ease;
+            .pill:last-child {
+                margin-bottom: 15rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        .pill-cards {
+            background-image: url("/images/team-mobile.svg");
+            transition: all 0.5s ease;
+            .pill:last-child {
+                margin-bottom: 5rem;
+            }
+        }
     }
 }
