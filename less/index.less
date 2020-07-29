@@ -94,6 +94,7 @@ header {
         .nav-container {
             display: flex;
             width: 100%;
+            transition: all 0.5s ease;
         }
         .nav-items {
             display: flex;
@@ -203,6 +204,7 @@ header {
         }
         .uvp {
             width: 500px;
+            padding-top: 15rem;
         } 
     }
 }
@@ -220,6 +222,7 @@ header {
             transition: all 0.5s ease;
             .nav-container{
                 align-items: center;
+                transition: all 0.5s ease;
             }
             .logo {
                 img {
@@ -244,10 +247,12 @@ header {
             }
             .mobile-menu {
                 display: block;
+                transition: all 0.5s ease;
                 button {
                     border: none;
                     background-color: inherit;
                     outline: none;
+                    transition: all 0.5s ease;
                     i {
                         color: @primary-color;
                     }
@@ -261,6 +266,7 @@ header {
                 padding-top: 2rem;
                 text-align: center;
                 box-shadow: @shadow;
+                transition: all 0.5s ease;
                 li {
                     padding-bottom: 3rem;
                 }
@@ -268,7 +274,8 @@ header {
         }
         .uvp {
             width: 350px;
-            padding-top: 15rem;
+            padding-top: 10rem;
+            transition: all 0.5s ease;
             h1 {
                 font-size: 3.2rem;
                 line-height: 5rem;
@@ -290,6 +297,7 @@ header {
 //Header media query 500px
 @media (max-width: 500px) {
     header {
+        transition: all 0.5s ease;
         .uvp {
             padding-top: 10rem;
         }
