@@ -119,6 +119,11 @@ header nav .nav-items .cta a {
 header nav .mobile-menu {
   display: none;
 }
+header nav .menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
 header .uvp {
   width: 700px;
   margin: 0 auto;
@@ -354,7 +359,7 @@ footer .copyright {
 header {
   background-image: url();
   padding: 0;
-  height: 140px;
+  height: 120px;
 }
 main h1 {
   font-family: "Francois One", sans-serif;
@@ -363,9 +368,22 @@ main h1 {
 main .pill-cards {
   border-top: none;
   margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-image: url("");
 }
 main .pill-cards .pill {
   justify-content: flex-start;
   width: 400px;
+}
+main .pill-cards .pill .pill-text h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+main .team-img {
+  height: 500px;
+  background-image: url("/images/team.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=./about.css.map */

@@ -119,6 +119,11 @@ header nav .nav-items .cta a {
 header nav .mobile-menu {
   display: none;
 }
+header nav .menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
 header .uvp {
   width: 700px;
   margin: 0 auto;
