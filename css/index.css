@@ -118,8 +118,7 @@ header nav .nav-items ul a:hover {
 header nav .nav-items .cta {
   display: flex;
   justify-content: flex-end;
-  width: 60%;
-  max-width: 275px;
+  min-width: 225px;
 }
 header nav .nav-items .cta a {
   text-decoration: none;
