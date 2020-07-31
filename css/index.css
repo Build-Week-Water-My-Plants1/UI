@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+body {
+  margin: 0 auto;
+  color: #2B3438;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+button {
+  border-style: solid;
+  border-radius: 30px;
+  padding: 1.5rem 2.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: "Inter", sans-serif;
+}
+.outline {
+  color: #00BDC8;
+  border-color: #00BDC8;
+  background-color: #F7FAFA;
+}
+.filled {
+  margin-left: 1rem;
+  background-color: #00BDC8;
+  border-color: #F7FAFA;
+  color: #FCF7F3;
+}
+a {
+  color: #00BDC8;
+}
+a:link {
+  text-decoration: none;
+  color: #00BDC8;
+}
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-grow: 1;
+}
+h1 {
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 6rem;
+  text-align: center;
+}
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+header {
+  background-color: #F7FAFA;
+  background-image: url(/images/flowers.svg);
+  height: 800px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5rem 2.5rem 0 2.5rem;
+  transition: all 0.5s ease;
+}
+header nav .nav-container {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+header nav .nav-container .logo {
+  padding-left: 2rem;
+}
+header nav .nav-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+header nav .nav-items ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header nav .nav-items ul li {
+  color: #00BDC8;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.5s ease;
+  margin-right: 2rem;
+  padding-left: 1rem;
+}
+header nav .nav-items ul li:first-of-type {
+  padding-left: 0;
+}
+header nav .nav-items ul .nav-inactive {
+  color: #2B3438;
+}
+header nav .nav-items ul a:hover {
+  color: #00BDC8;
+  transition: all 0.2s ease-in-out;
+}
+header nav .nav-items .cta {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 225px;
+}
+header nav .nav-items .cta a {
+  text-decoration: none;
+}
+header nav .mobile-menu {
+  display: none;
+}
+header #mobile {
+  display: none;
+}
+header .uvp {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 20rem;
+}
+header .uvp #uvp-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+header .uvp #uvp-cta a button {
+  margin: 0 auto;
+  font-family: "Francois One", sans-serif;
+  font-size: 3.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-radius: 40px;
+}
+@media (max-width: 900px) {
+  header {
+    height: 700px;
+    background-image: url(/images/flowers-tablet.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.5s ease;
+  }
+  header nav {
+    padding: 5rem 1rem 0 1rem;
+    transition: all 0.5s ease;
+  }
+  header nav .logo img {
+    height: 35px;
+    transition: all 0.5s ease;
+  }
+  header nav .nav-items ul li {
+    margin-right: 0;
+    padding-left: 2rem;
+  }
+  header nav .nav-items .cta {
+    width: 90%;
+  }
+  header nav .nav-items .cta button {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    transition: all 0.5s ease;
+  }
+  header .uvp {
+    width: 500px;
+    padding-top: 15rem;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    height: 650px;
+    background-image: url(/images/flowers-mobile.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.5s ease;
+  }
+  header nav {
+    display: block;
+    transition: all 0.5s ease;
+  }
+  header nav .nav-container {
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  header nav .logo img {
+    height: 30px;
+    transition: all 0.5s ease;
+  }
+  header nav .nav-items ul {
+    display: none;
+  }
+  header nav .nav-items .cta {
+    width: 100%;
+  }
+  header nav .nav-items .cta button {
+    border-radius: 4rem;
+    transition: all 0.5s ease;
+  }
+  header nav .nav-items .cta .filled {
+    display: none;
+  }
+  header nav .mobile-menu {
+    display: block;
+    transition: all 0.5s ease;
+  }
+  header nav .mobile-menu button {
+    border: none;
+    background-color: inherit;
+    outline: none;
+    transition: all 0.5s ease;
+  }
+  header nav .mobile-menu button i {
+    color: #00BDC8;
+  }
+  header nav #mobile {
+    display: block;
+    width: 100%;
+    background-color: #F7FAFA;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 0 0 rgba(34, 38, 42, 0.2);
+    transition: all 0.5s ease;
+  }
+  header nav #mobile li {
+    padding-bottom: 3rem;
+  }
+  header .uvp {
+    width: 350px;
+    padding-top: 10rem;
+    transition: all 0.5s ease;
+  }
+  header .uvp h1 {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
+  header .uvp #uvp-cta a button {
+    font-size: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    transition: all 0.5s ease;
+  }
+  header .nav-items .cta {
+    min-width: 100px !important;
+  }
+  header .uvp {
+    padding-top: 10rem;
+  }
+}
+@media (min-width: 2300px) {
+  header {
+    height: 1000px;
+  }
+}
+main #about-app {
+  margin: 0 auto;
+  padding: 10rem 0 20rem 0;
+}
+main #about-app .app-img {
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0;
+}
+main #about-app .app-img img {
+  height: 400px;
+}
+main #about-app #howto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+}
+main #about-app #howto .step {
+  width: 300px;
+  text-align: center;
+}
+main #about-app #howto .step .step-text {
+  text-align: center;
+}
+main #about-app #howto .step .step-text p {
+  margin-top: 2rem;
+}
+main #about-app #howto .right-margin {
+  margin-right: 10rem;
+}
+main .section-container {
+  background-image: url(/images/water-background.svg);
+  background-size: contain;
+  border-top: 1px solid #B5BDBF;
+  border-bottom: 1px solid #B5BDBF;
+}
+main .pill-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10rem 0 5rem 0;
+  padding: 5rem;
+}
+main .pill-cards .pill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: 5rem 0;
+  border-radius: 70px;
+  background-color: #FCF7F3;
+}
+main .pill-cards .pill img {
+  height: 150px;
+  margin-right: 2rem;
+}
+main .pill-cards .pill p {
+  margin-right: 2rem;
+}
+main #second-cta {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8rem;
+}
+main #second-cta img {
+  height: 5rem;
+}
+main #second-cta h1 {
+  color: #00BDC8;
+  font-family: "Francois One", sans-serif;
+  padding: 0 2rem 0 2rem;
+}
+@media (max-width: 900px) {
+  main #about-app {
+    margin: 0;
+    padding: 0;
+  }
+  main #about-app .app-img {
+    margin: 10rem 0;
+  }
+  main #about-app .app-img img {
+    height: 300px;
+  }
+  main #about-app #howto {
+    flex-direction: column;
+  }
+  main #about-app #howto .right-margin {
+    margin-right: 0;
+  }
+  main #about-app #howto .step {
+    margin-bottom: 7rem;
+  }
+  main .pill-cards {
+    margin-top: 5rem;
+  }
+  main #second-cta h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  main #about-app {
+    margin: 5rem 0 10rem 0;
+    padding: 0;
+  }
+  main #about-app .app-img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    text-align: center;
+  }
+  main #about-app .app-img img {
+    height: 225px;
+    margin: 0 auto;
+  }
+  main .pill-cards {
+    padding: 3rem;
+  }
+  main .pill-cards .pill {
+    flex-direction: column;
+    border-radius: 3rem;
+    padding: 4rem;
+  }
+  main .pill-cards .pill p {
+    margin-top: 2rem;
+  }
+  main #second-cta {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main #second-cta h1 {
+    padding: 0;
+    line-height: 4rem;
+  }
+}
+footer #social {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-color: #F7FAFA;
+}
+footer #social .icon-container {
+  width: 100%;
+  text-align: center;
+  padding: 5rem 0;
+}
+footer #social .icon-container a:first-child {
+  margin-right: 3rem;
+}
+footer .copyright {
+  color: #D6EBEC;
+  font-size: 1.5rem;
+  background-color: #0999A2;
+  padding: 2rem;
+}
+/*# sourceMappingURL=./index.css.map */

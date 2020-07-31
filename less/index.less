@@ -1,0 +1,495 @@
+@import "variables.less";
+
+// General styles
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: @font-body;
+}
+
+body {
+    margin: 0 auto;
+    color: @body-text;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+button {
+    border-style: solid;
+    border-radius: 30px;
+    padding: 1.5rem 2.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-family: @font-body;
+}
+
+.outline {
+    color: @primary-color;
+    border-color: @primary-color;
+    background-color: @background-color1;
+}
+.filled {
+    margin-left: 1rem;
+    background-color: @primary-color;
+    border-color: @background-color1;
+    color: @background-color2;
+}
+
+a{
+    color: @primary-color;
+}
+
+a:link {
+    text-decoration: none;
+    color: @primary-color;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 6rem;
+    text-align: center;
+  }
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+//End of General styles
+
+// Header
+header {
+    background-color: @background-color1;
+    background-image: url(/images/flowers.svg);
+    height: 800px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    //Top nav
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 5rem 2.5rem 0 2.5rem;
+        transition: all 0.5s ease;
+        .nav-container {
+            display: flex;
+            width: 100%;
+            transition: all 0.5s ease;
+            .logo {
+                padding-left: 2rem;
+            }
+        }
+        .nav-items {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            transition: all 0.5s ease;
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                li {
+                    color: @primary-color;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    transition: all 0.5s ease;
+                    margin-right: 2rem;
+                    padding-left: 1rem;
+                }
+                li:first-of-type {
+                    padding-left: 0;
+                }
+                .nav-inactive {
+                    color: @body-text;
+                }
+                a:hover {
+                    color: @primary-color;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+             //CTA buttons
+            .cta {
+                display: flex;
+                justify-content: flex-end;
+                min-width: 225px;
+                a {
+                    text-decoration: none; 
+                }
+            }
+        }
+        //Hamburger menu  
+        .mobile-menu {
+                display: none;
+        }
+    }
+        #mobile {
+            display: none;
+        }
+    // UVP
+    .uvp {
+        width: 700px;
+        margin: 0 auto;
+        padding-top: 20rem;
+        #uvp-cta {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            a {
+                button {
+                    margin: 0 auto;
+                    font-family: @font-special;
+                    font-size: 3.5rem;
+                    padding-left: 5rem;
+                    padding-right: 5rem;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}
+//Header - media query 900px
+@media (max-width: 900px) {
+    header {
+        height: 700px;
+        background-image: url(/images/flowers-tablet.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: all 0.5s ease;
+        nav {
+            padding: 5rem 1rem 0 1rem;
+            transition: all 0.5s ease;
+            .logo {
+                img {
+                    height: 35px;
+                    transition: all 0.5s ease;
+                }
+            }
+            .nav-items {
+                ul {
+                    li {
+                        margin-right: 0;
+                        padding-left: 2rem;
+                    }
+                }
+                .cta {
+                    width: 90%;
+                    button {
+                        padding: 1rem 2rem;
+                        border-radius: 3rem;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+        .uvp {
+            width: 500px;
+            padding-top: 15rem;
+        } 
+    }
+}
+//Header - media query 700px
+@media (max-width: 700px) {
+    header {
+        height: 650px;
+        background-image: url(/images/flowers-mobile.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: all 0.5s ease;
+        nav {
+            display: block;
+            transition: all 0.5s ease;
+            .nav-container{
+                align-items: center;
+                transition: all 0.5s ease;
+            }
+            .logo {
+                img {
+                    height: 30px;
+                    transition: all 0.5s ease;
+                }
+            }
+            .nav-items {
+                ul {
+                    display: none;
+                }
+                .cta {
+                    width: 100%;
+                    button {
+                        border-radius: 4rem;
+                        transition: all 0.5s ease;
+                    }
+                    .filled {
+                        display: none;
+                    }
+                }
+            }
+            .mobile-menu {
+                display: block;
+                transition: all 0.5s ease;
+                button {
+                    border: none;
+                    background-color: inherit;
+                    outline: none;
+                    transition: all 0.5s ease;
+                    i {
+                        color: @primary-color;
+                    }
+                }
+            }
+            #mobile {
+                display: block;
+                width: 100%;
+                background-color: @background-color1;
+                padding-bottom: 2rem;
+                padding-top: 2rem;
+                text-align: center;
+                box-shadow: @shadow;
+                transition: all 0.5s ease;
+                li {
+                    padding-bottom: 3rem;
+                }
+            }
+        }
+        .uvp {
+            width: 350px;
+            padding-top: 10rem;
+            transition: all 0.5s ease;
+            h1 {
+                font-size: 3.2rem;
+                line-height: 5rem;
+            }
+            #uvp-cta {
+                a {
+                    button {
+                        font-size: 2.5rem;
+                        padding-left: 3rem;
+                        padding-right: 4rem;
+                        border-radius: 30px;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+//Header media query 500px
+@media (max-width: 500px) {
+    header {
+        transition: all 0.5s ease;
+        .nav-items {
+            .cta {
+                min-width: 100px !important;
+            }
+        }
+        .uvp {
+            padding-top: 10rem;
+        }
+    }
+}
+//Media query for really large screens
+@media (min-width: 2300px) {
+    header {
+        height: 1000px;
+    }
+}
+//End of header media query
+
+//Main content
+main {
+    //How to use the app section
+    #about-app {
+        margin: 0 auto;
+        padding: 10rem 0 20rem 0;
+        .app-img {
+            display: flex;
+            justify-content: center;
+            margin: 10rem 0;
+            img {
+                height: 400px;
+            }
+        }
+        #howto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 5rem;
+            .step {
+                width: 300px;
+                text-align: center;
+                .step-text {
+                    text-align: center;
+                    p {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+            .right-margin {
+                margin-right: 10rem;
+            }
+        }
+    }
+    //Testimonials
+    .section-container {
+        background-image: url(/images/water-background.svg);
+        background-size: contain;
+        border-top: 1px solid @text-hint;
+        border-bottom: 1px solid @text-hint;
+    }
+    .pill-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 10rem 0 5rem 0;
+        padding: 5rem;
+        
+        .pill {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            margin: 5rem 0;
+            border-radius: 70px;
+            background-color: @background-color2;
+            img {
+                height: 150px;
+                margin-right: 2rem;
+            }
+            p {
+                margin-right: 2rem;
+            }
+        }
+    }
+    #second-cta {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 8rem;
+        img {
+            height: 5rem;
+        }
+        h1 {
+            color: @primary-color;
+            font-family: @font-special;
+            padding: 0 2rem 0 2rem;
+        }
+    }
+}
+//end of Main content
+
+//Main content - media query 900px
+@media (max-width: 900px) {
+    main {
+        #about-app {
+            margin: 0;
+            padding: 0;
+            .app-img {
+                margin: 10rem 0;
+                img {
+                    height: 300px;
+                }
+            }
+            #howto {
+                flex-direction: column;
+                .right-margin {
+                    margin-right: 0;
+                }
+                .step {
+                    margin-bottom: 7rem;
+                }
+            }
+        }
+        .pill-cards {
+            margin-top: 5rem;
+        }
+        #second-cta {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+//Main content - media query 600px
+@media (max-width: 600px) {
+    main {
+        #about-app {
+            margin: 5rem 0 10rem 0;
+            padding: 0;
+            .app-img {
+                display: block;
+                width: 100%;
+                object-fit: contain;
+                text-align: center;
+                img {
+                    height: 225px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .pill-cards {
+            padding: 3rem;
+            .pill {
+                flex-direction: column;
+                border-radius: 3rem;
+                padding: 4rem;
+                p {
+                    margin-top: 2rem;
+                }
+            }
+        }
+        #second-cta {
+            width: 100%;
+            margin: 0 auto;
+            h1 {
+                padding: 0;
+                line-height: 4rem;
+            }
+        }
+    }
+}
+//End of Main media query
+
+//Footer
+footer {
+    #social {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+        background-color: @background-color1;
+        .icon-container {
+            width: 100%;
+            text-align: center;
+            padding: 5rem 0;
+            a:first-child {
+                margin-right: 3rem;
+            }
+        }
+    }
+    .copyright {
+        color: @line-color;
+        font-size: 1.5rem;
+        background-color: @secondary-color;
+        padding: 2rem;
+    }
+}

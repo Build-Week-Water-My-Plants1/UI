@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Inter:wght@400;500;600;700&display=auto" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="https://kit.fontawesome.com/1e3f8182fc.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the team</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top nav -->
+        <nav>
+            <div class="nav-container">
+            <div class=logo>
+                <img src="images/logo.svg" alt="Water My Plants logo" srcset="">
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-inactive">About</li>
+                </ul>
+                <div class=cta>
+                    <a href="https://water-my-plants-1.vercel.app/"><button class="outline">Sign in</button></a>
+                    <a href="https://water-my-plants-1.vercel.app/"><button class="filled">Sign up</button></a>
+                </div>
+                <div class="mobile-menu">
+                    <button onclick="mobileMenu()"></a><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+            <!-- Mobile hamburger menu -->
+           
+            <ul id="mobile" style="display: none;">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-inactive">About</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>MEET THE TEAM</h1>
+        <section class="pill-cards">
+            <div class="pill">
+                <img src="images/team photos/liz.png" alt="A rounded photo of Liz Shulman" srcset="">
+                <div class="pill-text">
+                    <h4>Liz Shulman</h4>
+                    <p>Front-end Developer I</p>
+                </div>
+            </div>
+            <div class="pill">
+                <img src="images/team photos/daniel.png" alt="A rounded photo of Daniel Beggs" srcset="">
+                <div class="pill-text">
+                    <h4>Daniel Beggs</h4>
+                    <p>Front-end Developer I</p>
+                </div>
+            </div>
+            <div class="pill">
+                <img src="images/team photos/keenan.png" alt="" srcset="A rounded photo of Keenan Hallas">
+                <div class="pill-text">
+                    <h4>Keenan Hallas</h4>
+                    <p>Front-end Developer II</p>
+                </div>
+            </div>
+            <div class="pill">
+                <img src="images/team photos/lindsay.png" alt="A rounded photo of Lindsay White" srcset="">
+                <div class="pill-text">
+                    <h4>Lindsay White</h4>
+                    <p>Front-end Developer II</p>
+                </div>
+            </div>
+            <div class="pill">
+                <img src="images/team photos/joanne.png" alt="A rounded photo of Joanne Berina" srcset="">
+                <div class="pill-text">
+                    <h4>Joanne Berina</h4>
+                    <p>UI Developer </p>
+                </div>
+            </div>
+            <div class="pill">
+                <img src="images/team photos/tatyana.png" alt="A rounded photo of Tatyana Dzhura" srcset="">
+                <div class="pill-text">
+                    <h4>Tatyana Dzhura</h4>
+                    <p>Backend Developer</p>
+                </div>
+            </div>
+            <div class="pill">
+                <img src="images/team photos/shannon.png" alt="A rounded photo of Shannon Reed" srcset="">
+                <div class="pill-text">
+                    <h4>Shannon Reed</h4>
+                    <p>Project Lead</p>
+                </div>
+            </div>
+        </section>
+        <section class="team-img">
+            
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div id="social">
+            <h2>Connect with us</h2>
+            <div class="icon-container">
+                <a class="icon" href="" target="_blank"><i class="fa fa-facebook-official fa-3x"></i></a>
+                <a class="icon" href="" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+            </div>            
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2020 – All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        function mobileMenu() {
+            var x = document.getElementById("mobile");
+            x.style.display === "block" ? x.style.display = "none" : x.style.display = "block"
+        }
+    </script>
+</body>
+</html>

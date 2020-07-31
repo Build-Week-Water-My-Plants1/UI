@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Inter:wght@400;500;600;700&display=auto" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/1e3f8182fc.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water My Plants</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top nav -->
+        <nav>
+            <div class="nav-container">
+            <div class=logo>
+                <img src="images/logo.svg" alt="Water My Plants logo" srcset="">
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li class="nav-inactive">Home</li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <div class=cta>
+                    <a href="https://water-my-plants-1.vercel.app/"><button class="outline">Sign in</button></a>
+                    <a href="https://water-my-plants-1.vercel.app/"><button class="filled">Sign up</button></a>
+                </div>
+                <div class="mobile-menu">
+                    <button onclick="mobileMenu()"></a><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+            <!-- Mobile hamburger menu -->
+            <ul id="mobile" style="display: none;">
+                <li class="nav-inactive">Home</li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- Hero section -->
+        <div class="uvp">
+            <h1>The water reminder app that will (kinda) guarantee you won’t kill your plants!</h1>
+            <div id="uvp-cta">
+                <a href="https://water-my-plants-1.vercel.app/"><button class="filled">TRY IT FOR FREE</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- How to use the app -->
+        <section id="about-app">
+            <div class="app-img">
+                <img src="images/cards.png" alt="An image of plant cards" srcset="">
+            </div>
+            <div id="howto">
+                <div class="step right-margin">
+                    <div class="step-img">
+                        <img src="images/icons/plant.svg" alt="a vector image of a potted plant" srcset="">
+                    </div>
+                    <div class="step-text">
+                        <h3>Add Your plant</h3>
+                        <p>Give your plant a nickname and identify the specie.</p>
+                    </div>
+                </div>
+                <div class="step right-margin">
+                    <div class="step-img">
+                        <img src="images/icons/drops.svg" alt="a vector image of water drops" srcset="">
+                    </div>
+                    <div class="step-text">
+                        <h3>Set watering frequency</h3>
+                        <p>Choose a weekly or interval watering schedule.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-img">
+                        <img src="images/icons/notifications.svg" alt="a vector image of a calendar alert" srcset=""> 
+                    </div>
+                    <div class="step-text">
+                        <h3>Receive notifications</h3>
+                        <p>Reminders help you to never forget to water your plants!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- What the customers says about the app -->
+        <div class="section-container">
+            <section id="testimonial" class="pill-cards">
+                <div class="pill">
+                    <img src="images/person1.png" alt="a rounded photo of a woman in her 20's with brown hair wearing a peach t-shirt" srcset="">
+                    <p>"I have a jungle in my apartment. I have about 50 plants that I take care of and since using this app, not a single plant is left unwatered!"</p>
+                </div>
+                <div class="pill">
+                    <img src="images/person2.png" alt="a rounded photo of a man in his 30's with short black hair wearing a plaid button down shirt" srcset="">
+                    <p>"I am a novice and certainly don't have a green thumb. This app really helps me take care of my plants."</p>
+                </div>
+                <div class="pill">
+                    <img src="images/person3.png" alt="a rounded photo of a woman in her 30's with reminder hair wearing a blue shirt" srcset="">
+                    <p>"This app is so simple and easy to use especially for someone like me who is not tech-savvy."</p>
+                </div>
+            </section>
+            <section id="second-cta">
+                <img src="/images/icons/plant.svg" alt="a vector image of a potted plant" srcset="">
+                <a href="https://water-my-plants-1.vercel.app/"><h1>Sign up to get started!</h1></a>
+                <img src="/images/icons/plant.svg" alt="a vector image of a potted plant" srcset="">
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div id="social">
+            <h2>Connect with us</h2>
+            <div class="icon-container">
+                <a class="icon" href="" target="_blank"><i class="fa fa-facebook-official fa-3x"></i></a>
+                <a class="icon" href="" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+            </div>            
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2020 – All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        function mobileMenu() {
+            var x = document.getElementById("mobile");
+            x.style.display === "block" ? x.style.display = "none" : x.style.display = "block"
+        }
+    </script>
+</body>
+</html>
