@@ -299,15 +299,18 @@ main #about-app #howto .step .step-text p {
 main #about-app #howto .right-margin {
   margin-right: 10rem;
 }
+main .section-container {
+  background-image: url(/images/water-background.svg);
+  background-size: contain;
+  border-top: 1px solid #B5BDBF;
+  border-bottom: 1px solid #B5BDBF;
+}
 main .pill-cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 10rem 0 5rem 0;
   padding: 5rem;
-  background-image: url(/images/water-background.svg);
-  background-size: contain;
-  border-top: 1px solid #B5BDBF;
 }
 main .pill-cards .pill {
   display: flex;
@@ -329,7 +332,6 @@ main #second-cta {
   display: flex;
   justify-content: center;
   padding-bottom: 8rem;
-  border-bottom: 1px solid #B5BDBF;
 }
 main #second-cta img {
   height: 5rem;

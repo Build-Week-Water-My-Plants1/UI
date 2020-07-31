@@ -345,15 +345,19 @@ main {
         }
     }
     //Testimonials
+    .section-container {
+        background-image: url(/images/water-background.svg);
+        background-size: contain;
+        border-top: 1px solid @text-hint;
+        border-bottom: 1px solid @text-hint;
+    }
     .pill-cards {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         margin: 10rem 0 5rem 0;
         padding: 5rem;
-        background-image: url(/images/water-background.svg);
-        background-size: contain;
-        border-top: 1px solid @text-hint;
+        
         .pill {
             display: flex;
             justify-content: center;
@@ -375,7 +379,6 @@ main {
         display: flex;
         justify-content: center;
         padding-bottom: 8rem;
-        border-bottom: 1px solid @text-hint;
         img {
             height: 5rem;
         }
