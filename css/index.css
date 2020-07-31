@@ -264,6 +264,11 @@ header .uvp #uvp-cta a button {
     padding-top: 10rem;
   }
 }
+@media (min-width: 2300px) {
+  header {
+    height: 1000px;
+  }
+}
 main #about-app {
   margin: 0 auto;
   padding: 10rem 0;
