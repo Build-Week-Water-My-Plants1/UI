@@ -469,9 +469,11 @@ main .team-img {
     margin-bottom: 5rem;
   }
   main .pill-cards .pill-text h4 {
+    font-size: 2rem;
     margin-top: 3rem;
   }
   main .pill-cards .pill-text p {
+    font-size: 1.75rem;
     margin-top: 1rem;
   }
   main .team-img {
