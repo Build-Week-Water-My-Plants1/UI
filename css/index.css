@@ -379,8 +379,15 @@ main #second-cta h1 {
     margin: 5rem 0 10rem 0;
     padding: 0;
   }
+  main #about-app .app-img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    text-align: center;
+  }
   main #about-app .app-img img {
-    height: 250px;
+    height: 225px;
+    margin: 0 auto;
   }
   main .pill-cards {
     padding: 3rem;
