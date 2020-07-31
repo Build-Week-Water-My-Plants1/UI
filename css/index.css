@@ -81,6 +81,9 @@ header nav .nav-container {
   width: 100%;
   transition: all 0.5s ease;
 }
+header nav .nav-container .logo {
+  padding-left: 2rem;
+}
 header nav .nav-items {
   display: flex;
   justify-content: flex-end;
@@ -271,12 +274,12 @@ header .uvp #uvp-cta a button {
 }
 main #about-app {
   margin: 0 auto;
-  padding: 10rem 0;
+  padding: 10rem 0 20rem 0;
 }
 main #about-app .app-img {
   display: flex;
   justify-content: center;
-  margin: 15rem 0;
+  margin: 10rem 0;
 }
 main #about-app .app-img img {
   height: 400px;
@@ -285,6 +288,7 @@ main #about-app #howto {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 5rem;
 }
 main #about-app #howto .step {
   width: 300px;
@@ -343,7 +347,8 @@ main #second-cta h1 {
 }
 @media (max-width: 900px) {
   main #about-app {
-    margin-top: 5rem;
+    margin: 0;
+    padding: 0;
   }
   main #about-app .app-img {
     margin: 10rem 0;
@@ -369,9 +374,8 @@ main #second-cta h1 {
 }
 @media (max-width: 600px) {
   main #about-app {
-    margin-top: 0;
-    padding-bottom: 2rem;
-    padding-top: 3rem;
+    margin: 5rem 0 10rem 0;
+    padding: 0;
   }
   main #about-app .app-img img {
     height: 250px;

@@ -95,6 +95,9 @@ header {
             display: flex;
             width: 100%;
             transition: all 0.5s ease;
+            .logo {
+                padding-left: 2rem;
+            }
         }
         .nav-items {
             display: flex;
@@ -309,18 +312,18 @@ header {
         height: 1000px;
     }
 }
-//End of media query
+//End of header media query
 
 //Main content
 main {
     //How to use the app section
     #about-app {
         margin: 0 auto;
-        padding: 10rem 0;
+        padding: 10rem 0 20rem 0;
         .app-img {
             display: flex;
             justify-content: center;
-            margin: 15rem 0;
+            margin: 10rem 0;
             img {
                 height: 400px;
             }
@@ -329,6 +332,7 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 0 5rem;
             .step {
                 width: 300px;
                 text-align: center;
@@ -395,7 +399,8 @@ main {
 @media (max-width: 900px) {
     main {
         #about-app {
-            margin-top: 5rem;
+            margin: 0;
+            padding: 0;
             .app-img {
                 margin: 10rem 0;
                 img {
@@ -426,9 +431,8 @@ main {
 @media (max-width: 600px) {
     main {
         #about-app {
-            margin-top: 0;
-            padding-bottom: 2rem;
-            padding-top: 3rem;
+            margin: 5rem 0 10rem 0;
+            padding: 0;
             .app-img {
                 img {
                     height: 250px;
@@ -456,7 +460,7 @@ main {
         }
     }
 }
-
+//End of Main media query
 
 //Footer
 footer {
