@@ -262,6 +262,9 @@ header .uvp #uvp-cta a button {
   header {
     transition: all 0.5s ease;
   }
+  header .nav-items .cta {
+    min-width: 100px !important;
+  }
   header .uvp {
     padding-top: 10rem;
   }
